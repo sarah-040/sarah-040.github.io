@@ -1,173 +1,157 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victoria's Secret - Nova Coleção</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
         }
-
+       
         body {
-            background-color: #fff0f5;
-            color: #333;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff0f6;
         }
-
+       
         header {
-            background-color: #ffdee9;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 48px;
-            font-weight: bold;
-            color: #e91e63;
-        }
-
-        header p {
-            font-size: 18px;
-            margin-top: 10px;
-            color: #555;
-        }
-
-        .banner {
-            background-image: url('https://images.unsplash.com/photo-1573497019415-8a1b13a1e15f?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-        }
-
-        .banner h2 {
-            font-size: 56px;
-            font-weight: bold;
-        }
-
-        .banner button {
-            margin-top: 20px;
-            padding: 15px 40px;
-            font-size: 20px;
             background-color: #e91e63;
             color: white;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: 0.3s;
+            padding: 20px;
+            text-align: center;
         }
-
-        .banner button:hover {
-            background-color: #c2185b;
+       
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #c2185b;
         }
-
+       
         section {
-            padding: 60px 20px;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background-color: #fff;
-            border-radius: 20px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            width: 300px;
-            margin: 20px;
-            overflow: hidden;
-            transition: transform 0.3s;
-        }
-
-        .card img {
             width: 100%;
-            height: 400px;
-            object-fit: cover;
+            flex: 1;
+            background-color: #fce4ec;
+            display: flex;
+            min-height: 500px;
         }
-
-        .card h3 {
-            font-size: 24px;
-            margin: 15px;
-            color: #e91e63;
+       
+        #primeiro {
+            width: 20%;
+            background-color: #f8bbd0;
+            padding: 20px;
+            border-right: 1px solid #ccc;
         }
-
-        .card p {
-            font-size: 16px;
-            margin: 0 15px 15px;
-            color: #555;
+       
+        #segundo {
+            width: 60%;
+            background-color: white;
+            padding: 30px;
         }
-
-        .card button {
-            margin: 0 15px 15px;
-            padding: 10px;
-            width: calc(100% - 30px);
+       
+        #terceiro {
+            width: 20%;
+            background-color: #f8bbd0;
+            padding: 20px;
+            border-left: 1px solid #ccc;
+        }
+       
+        footer {
             background-color: #e91e63;
             color: white;
-            border: none;
-            border-radius: 15px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .card button:hover {
-            background-color: #c2185b;
-        }
-
-        footer {
-            background-color: #ffdee9;
-            padding: 30px 20px;
             text-align: center;
-            color: #e91e63;
-            font-weight: bold;
+            padding: 15px;
+            margin-top: 20px;
+        }
+       
+        .produto {
+            background-color: #ec407a;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+       
+        .produto:hover {
+            background-color: #d81b60;
+        }
+       
+        .dica {
+            background-color: #fce4ec;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+       
+        h5 {
+            font-size: 24px;
+            color: #c2185b;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>Victoria's Secret</h1>
-        <p>Descubra a nova coleção de lingerie e fragrâncias exclusivas</p>
+        <h2>💖 Victoria’s Secret</h2>
+        <p>Beleza, moda e confiança em cada detalhe</p>
     </header>
-
-    <div class="banner">
-        <div>
-            <h2>Nova Coleção 2026</h2>
-            <button>Compre Agora</button>
-        </div>
-    </div>
-
+   
+    <h1>✨ Coleção Exclusiva</h1>
+   
     <section>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1612433990531-0d29c3a466fa?auto=format&fit=crop&w=800&q=80" alt="Lingerie Elegante">
-            <h3>Lingerie Luxo</h3>
-            <p>Conforto e estilo que fazem você se sentir confiante em qualquer ocasião.</p>
-            <button>Ver Detalhes</button>
+        <div id="primeiro">
+            <h3>💡 Curiosidades</h3>
+            <div class="dica">
+                <strong>Lingerie Icônica</strong><br>
+                A marca é referência mundial em moda íntima desde 1977.
+            </div>
+            <div class="dica">
+                <strong>Desfiles Memoráveis</strong><br>
+                O Victoria’s Secret Fashion Show marcou gerações com glamour e música.
+            </div>
+            <div class="dica">
+                <strong>Perfumes</strong><br>
+                As fragrâncias da marca estão entre as mais vendidas do mundo.
+            </div>
         </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=800&q=80" alt="Perfume">
-            <h3>Fragrâncias Exóticas</h3>
-            <p>Descubra perfumes que transformam cada momento em inesquecível.</p>
-            <button>Explorar Perfumes</button>
+       
+        <div id="segundo">
+            <h5>💃 O que torna a Victoria’s Secret especial?</h5>
+            <p>A Victoria’s Secret é sinônimo de confiança, estilo e feminilidade. Suas coleções combinam elegância e conforto, trazendo peças que vão além da moda íntima e se tornam símbolos de empoderamento.</p>
+           
+            <p>Além das lingeries, a marca também é reconhecida por perfumes, cosméticos e roupas esportivas, sempre com um toque sofisticado.</p>
+           
+            <h3 style="margin-top: 20px;">🌸 Principais linhas</h3>
+            <ul style="margin-left: 20px; line-height: 1.8;">
+                <li><strong>Lingerie:</strong> peças delicadas e sofisticadas.</li>
+                <li><strong>Perfumes:</strong> fragrâncias marcantes e femininas.</li>
+                <li><strong>Sport:</strong> moda fitness com estilo.</li>
+            </ul>
         </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1576201836915-7a2c556b84a2?auto=format&fit=crop&w=800&q=80" alt="Roupas de Dormir">
-            <h3>Pijama e Moda Casa</h3>
-            <p>Estilo e conforto também dentro de casa, com toque delicado e sofisticado.</p>
-            <button>Conhecer Coleção</button>
+       
+        <div id="terceiro">
+            <h3>🛍️ Produtos em destaque</h3>
+            <div class="produto" onclick="alert('Lingerie Lace Collection - R$ 299,90')">
+                👙 Lace Collection
+            </div>
+            <div class="produto" onclick="alert('Perfume Bombshell - R$ 399,90')">
+                🌸 Perfume Bombshell
+            </div>
+            <div class="produto" onclick="alert('Conjunto esportivo - R$ 249,90')">
+                🏋️‍♀️ Sport Set
+            </div>
+            <div class="dica" style="margin-top: 20px;">
+                <strong>⚠️ Importante:</strong> Os preços acima são apenas exemplos ilustrativos.
+            </div>
         </div>
     </section>
-
+   
     <footer>
-        © 2026 Victoria's Secret - Fique linda, sinta-se única
+        <p>Site temático - Inspirado na Victoria’s Secret | Desenvolvido em sala de aula</p>
+        <p>💡 A moda é sobre confiança e estilo</p>
     </footer>
-
 </body>
 </html>
